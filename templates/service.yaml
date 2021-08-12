@@ -4,14 +4,14 @@ metadata:
   name: gitea-service
 spec:
   selector:
-    app: gitea-service
+    app: gitea-selector
   ports:
     - name: gitea-http
       port: 3000
       targetPort: 3000
-      nodePort: 30000
+      nodePort: 30003
     - name: gitea-ssh
-      port: 2222
-      targetPort: 2222
+      port: 22
+      targetPort: 22
       nodePort: 32222
   type: NodePort

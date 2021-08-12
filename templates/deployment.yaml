@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gitea
+      app: gitea-selector
   template:
     metadata:
       labels:
-        app: gitea
+        app: gitea-selector
     spec:
       containers:
         - name: gitea
